@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background: #DFE0E4;
+   }
+   #tab1> div {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   }
+   .col, .row {
+    padding: 0;
+    margin: 0;
+   }
+   #tab1 div:nth-child(1) {
+    background: #89ABE3FF;
+    color: white;
+   }
+   #tab1 div:nth-child(2) {
+    letter-spacing: 3px;
+    background: #eaafc8;
+    color: white;
+   }
+   #tab1 div:nth-child(3) {
+    letter-spacing: 3px;
+    background: deepskyblue;
+    color: white;
+    transform: translateX(-0.5px);
+   }
+   #tab1 div:nth-child(4) {
+    background: rgb(88, 131, 200);
+    color: white;
+    font-size: 1.3rem;
+    padding: 2rem;
+   }
+   #playerDash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4px;
+    min-height: 40px;
+    width: 80%;
+    border: 2px solid white;
+    background: white;
+    margin: 15px auto;
+   }
+   #playerDash div {
+    background: lightgray;
+    padding: 0 0 5px 0;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+   }
+   #playerDash .active {
+    font-weight: bolder;
+    color: white;
+    background: #eaafc8;
+   }
+   #playerDash .active i {
+    color: white;
+   }
+   #playerDash i {
+    color: lightgrey;
+   }
+   #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+   }
+   #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 4px 2px 1px #cecece;
+    position: relative;
+    background: white;
+   }
+   .blocks {
+    border: 2px solid rgba(0, 20, 20, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+   }
+   .blocks div {
+     position: absolute;
+   }
+   body.swal2-shown>[aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+   }
+   .swal {
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+   
+   }
+   .swal button:focus {
+    border: none;
+    box-shadow: none;
+   }
+   
+   .fa-times {
+    color: dodgerblue;
+   }
+   
+   .fa-circle-o {
+    color: teal;
+   }
+   
+   #tab2 .btn {
+    background: rgba(0, 0, 0, 1);
+    border: none;
+    box-shadow: none;
+    color: white;
+    margin: 5px;
+   }
+   
+   .btn:hover {
+    color: white;
+   }
+   
+   .btn:focus {
+    border: none;
+    outline: none;
+    background: white;
+   }
+   
+   .btn:disabled {
+    color: black;
+   }
+   
+   .occupied {
+    background: rgba(225, 0, 0, 0.3);
+   }
+   
+   .undo {
+    background: rgba(0, 10, 225, 0.2);
+   }

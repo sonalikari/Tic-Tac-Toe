@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Game: TIC TAC TOE</title>
+ <link rel="shortcut icon" href="https://cdn2.vectorstock.com/i/1000x1000/02/36/tic-tac-toe-game-isolated-on-white-background-vector-13990236.jpg">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css">
+</head>
+<body>
+ <div class="col s12 hide">
+  <ul class="tabs">
+   <li class="tab col s3"><a href="#tab1" class="active">Test 1</a></li>
+   <li class="tab col s3"><a href="#tab2">Test 2</a></li>
+  </ul>
+ </div>
+ <div id="tab1" class="col s12">
+  <div>
+<h3 class="center">TIC-TAC-TOE</h3>
+  </div>
+  <div>
+   <h5 class="center">Play with <strong>A Friend</strong> or play with <strong>BOT</strong>.
+   </h5>
+  </div>
+  <div class="center">
+   <button id="playBtn" class="btn btn-floating btn-large center teal"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+  </div>
+  <div>
+    <p class="center">Tic-tac-toe game(also called Noughts and Crosses) is a game in which two players take turns in drawing either an ' O' or an ' X' in one square of a grid consisting of nine squares. The winner is the first player to get three of the same symbols in a row.</p>
+   </div>
+ </div>
+ 
+ 
+ <div id="tab2" class="col s12 hide">
+  <button class="btn" id="restartBtn"><i class="fa fa-bars fa-2x"></i></button>
+  <button class="btn right" id="quitBtn"><i class="fa fa-close fa-2x"></i></button>
+  <div>
+   <div id="playerDash" class="">
+    <div>
+     <div id="player1" class="active"></div>
+     <div id="player1Score"></div>
+    </div>
+    <div>
+     <div id="player2"></div>
+     <div id="player2Score"></div>
+    </div>
+   </div>
+   <div id="container">
+    <div id="grid">
+    </div>
+   </div>
+   <div id="actionBtns">
+    <button id="undoBtn" class="btn btn-floating left"><i class="fa fa-undo"></i></button>
+    <button class="btn btn-floating right" id="redoBtn"><i class="fa fa-repeat"></i></button>
+   </div>
+  </div>
+ </div>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script src="game.js"></script>
+</body>
+</html>
